@@ -1,16 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+import "./index.css";
+import App from "./App";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import reportWebVitals from "./reportWebVitals";
+import { DefaultContextProvider } from "./contexts/DefaultContext";
+import { createRoot } from "react-dom/client";
+import { SnackbarProvider } from "notistack";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const container = document.getElementById("root");
+container &&
+  createRoot(container).render(
+    <SnackbarProvider>
+      <DefaultContextProvider>
+        <App />
+      </DefaultContextProvider>
+    </SnackbarProvider>
+  );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
