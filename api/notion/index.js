@@ -1,4 +1,5 @@
-import { NotionAPI } from "notion-client";
+// import from "notion-client";
+const { NotionAPI } = require("notion-client")
 // import { VercelRequest, VercelResponse } from "@vercel/node";
 /* import axios from "axios";
 // request -> ?id={your_id}
