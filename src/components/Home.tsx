@@ -29,7 +29,8 @@ function Header() {
         <MTypography
           variant="h1"
           color="text.primary"
-          fontFamily={"'Montez', cursive"}
+          fontFamily={"'Lavishly Yours', cursive"}
+          //   fontFamily={"'Montez', cursive"}
           initial={{
             opacity: 0,
             textShadow: `none`,
