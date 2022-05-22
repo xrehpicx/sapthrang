@@ -2,6 +2,9 @@
 import { css, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { Background } from "./background";
+import { ReactComponent as AtriaLogo } from "../assets/atria_logo.svg";
+import { ReactComponent as CcaLogo } from "../assets/cca_logo.svg";
+// import CcaLogo from "../assets/cca_logo.png";
 
 export function Home() {
   return (
@@ -14,8 +17,38 @@ export function Home() {
 const MTypography = motion(Typography);
 function Header() {
   return (
-    <header>
+    <header
+      css={css`
+        position: relative;
+        overflow: hidden;
+      `}
+    >
       <Background />
+      <div
+        css={css`
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1.6rem;
+          & svg {
+            width: 160px;
+            /* height: 160px; */
+            display: flex;
+          }
+        `}
+      >
+        <div>
+          <AtriaLogo />
+        </div>
+        <div>
+          <CcaLogo width="100%" height="100%" />
+        </div>
+      </div>
       <div
         css={css`
           display: flex;
