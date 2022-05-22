@@ -1,16 +1,15 @@
 /** @jsxImportSource @emotion/react */
-import { Container, Typography } from "@mui/material";
-import { Background } from "./components/background";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./components/Home";
 // import { css, palette } from "@mui/system";
 
 function App() {
   return (
-    <Container maxWidth="sm">
-      <Background />
-      <Typography variant="subtitle2" color="text.secondary">
-        My react template
-      </Typography>
-    </Container>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
