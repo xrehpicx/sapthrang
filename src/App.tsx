@@ -9,8 +9,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/page/:id" element={<Notion />} />
-        <Route path="/pages" element={<Notion />} />
+        <Route path="/event/:id" element={<Notion />} />
+        <Route path="/events" element={<Notion />} />
       </Routes>
     </Router>
   );

@@ -23,13 +23,13 @@ export function Background() {
       color1: 0xfffe00,
       color2: 0xff0000,
       colorMode: "lerp",
-      birdSize: 2.0,
+      birdSize: 2.5,
       wingSpan: 24.0,
       speedLimit: 20.0,
-      separation: 45.0,
+      separation: 50.0,
       alignment: 5.0,
       cohesion: 1.0,
-      quantity: 4.0,
+      quantity: 3.5,
     });
 
     return () => {

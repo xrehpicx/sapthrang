@@ -13,6 +13,7 @@ export function Home() {
     <div>
       <Header />
       <About />
+      <SapthrangTheme />
     </div>
   );
 }
@@ -162,7 +163,7 @@ function About() {
         margin: 0 auto;
       `}
     >
-      <Typography textAlign={"center"} mb={1} variant="h2" color="text.primary">
+      <Typography mb={1} variant="h2" color="text.primary">
         About
       </Typography>
       <Typography color="text.secondary" textAlign={"justify"} mb={1}>
@@ -188,6 +189,37 @@ function About() {
         doesn’t leave behind the young Shakespeares, the enthusiastic debaters,
         the talented poets and knowledgeable quizzers, for everything is set for
         them as well.
+      </Typography>
+    </div>
+  );
+}
+function SapthrangTheme() {
+  return (
+    <div
+      css={css`
+        backdrop-filter: blur(0.6rem);
+        padding: 1.6rem 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      `}
+    >
+      <Typography mb={1} variant="h2" color="text.primary">
+        Theme for Sapthrang 2022
+      </Typography>
+      <Typography color="text.secondary" textAlign={"justify"} mb={1}>
+        Put your masks on,
+      </Typography>
+      <Typography color="text.secondary" textAlign={"justify"} mb={1}>
+        And grab some popcorn
+      </Typography>
+      <Typography color="text.secondary" textAlign={"justify"} mb={1}>
+        Because it’s time to celebrate a carnival that Atria has never witnessed
+        before!
+      </Typography>
+      <Typography color="text.secondary" textAlign={"justify"} mb={1}>
+        This year we are going with Carnival x Masquerade as our theme for the
+        fest. So here’s to making your college days more colourful and
+        memorable!
       </Typography>
     </div>
   );
