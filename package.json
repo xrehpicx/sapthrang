@@ -24,6 +24,7 @@
     "notistack": "^2.0.5",
     "rc-dropdown": "^3.6.2",
     "react": "^18.0.0",
+    "react-countdown": "^2.3.2",
     "react-dom": "^18.0.0",
     "react-notion-x": "^6.12.9",
     "react-router-dom": "^6.3.0",
@@ -47,6 +48,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "vercel-start": "NODE_TLS_REJECT_UNAUTHORIZED=0 vercel dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -68,5 +70,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "type": "module"
 }

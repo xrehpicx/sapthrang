@@ -29,7 +29,7 @@ export function Background() {
       separation: 45.0,
       alignment: 5.0,
       cohesion: 1.0,
-      quantity: 3.0,
+      quantity: 4.0,
     });
 
     return () => {
@@ -51,7 +51,7 @@ export function Background() {
     <div
       ref={ref}
       css={css`
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
         top: 0;

@@ -17,7 +17,7 @@ export const DarkThemeOptions: ThemeOptions = {
   palette: {
     mode: "dark",
     primary: {
-      main: "#5F259F",
+      main: "#fff200",
     },
     error: {
       main: "#b53750",
