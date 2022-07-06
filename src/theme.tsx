@@ -8,7 +8,9 @@ export const DarkThemeOptions: ThemeOptions = {
   typography: {
     allVariants: {
       // color: "whitesmoke",
+      fontFamily: `'Raleway', sans-serif`,
     },
+
     subtitle1: {
       color: "#fff",
       opacity: 0.8,
@@ -17,7 +19,7 @@ export const DarkThemeOptions: ThemeOptions = {
   palette: {
     mode: "dark",
     primary: {
-      main: "#fff200",
+      main: "#ab36ff",
     },
     error: {
       main: "#b53750",
@@ -26,8 +28,8 @@ export const DarkThemeOptions: ThemeOptions = {
       main: "#437aff",
     },
     background: {
-      default: "#101015",
-      paper: "#191920",
+      default: "#090916",
+      paper: "#13131d",
     },
     divider: "rgba(191,202,208,0.12)",
   },

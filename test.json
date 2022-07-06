@@ -1,0 +1,11 @@
+{
+  "response": [
+    {
+      "hostname": "string",
+      "region": "string",
+      "supernet": "string",
+      "parent": "string",
+      "team": "string"
+    }[]
+  ]
+}

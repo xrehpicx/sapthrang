@@ -1,4 +1,3 @@
-import { NotionAPI } from "notion-client";
 import { VercelRequest, VercelResponse } from "@vercel/node";
 
 /* import axios from "axios";
@@ -9,7 +8,6 @@ axios.defaults.baseURL =
     : "http://localhost:3000/"; */
 
 async function handler(req: VercelRequest, res: VercelResponse) {
-  const notion = new NotionAPI();
   res.send("hello from typescript!");
 }
 
