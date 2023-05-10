@@ -51,9 +51,8 @@ export function Home() {
       `}
     >
       <Header />
-      <br/>
-      <br/>
       <About />
+	<br/>
       <SapthrangTheme />
       <Footer />
     </div>
