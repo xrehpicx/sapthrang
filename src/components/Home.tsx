@@ -51,8 +51,8 @@ export function Home() {
       `}
     >
       <Header />
+      <br /><br />
       <About />
-	<br/>
       <SapthrangTheme />
       <Footer />
     </div>
@@ -281,7 +281,7 @@ export function Header({ hide }: { hide?: boolean }) {
               }
             `}
           >
-            <br/>
+            <br />
             <h3>Events</h3>
             <p>Note: The Events are out-dated. These need to be updated,once everything is decided</p>
           </Typography>
@@ -370,7 +370,7 @@ const Completionist = () => (
       variant="h4"
       color={"text.primary"}
       fontFamily={"'Lavishly Yours', cursive"}
-    ><br/>
+    ><br />
       <h3>Coming Soon</h3>
     </Typography>
   </div>
@@ -428,16 +428,16 @@ function About() {
   return (
     <div
       id="about"
-      // css={css`
-      //   padding: 1.6rem 3rem;
-      //   max-width: 1200px;
-      //   margin: 1rem auto;
-      //   backdrop-filter: blur(0.6rem);
+    // css={css`
+    //   padding: 1.6rem 3rem;
+    //   max-width: 1200px;
+    //   margin: 1rem auto;
+    //   backdrop-filter: blur(0.6rem);
 
-      //   .MuiTypography-body1 {
-      //     font-size: 1.2rem;
-      //   }
-      // `}
+    //   .MuiTypography-body1 {
+    //     font-size: 1.2rem;
+    //   }
+    // `}
     >
       <Typography
         mb={1}
