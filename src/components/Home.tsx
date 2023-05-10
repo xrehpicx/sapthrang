@@ -280,7 +280,10 @@ export function Header({ hide }: { hide?: boolean }) {
               }
             `}
           >
-            Events
+            <br/>
+            <h3>Events</h3>
+            <p>Note: The Events are out-dated. These need to be updated,once everything is decided</p>
+            <br/>
           </Typography>
           <div
             css={css`
@@ -367,11 +370,13 @@ const Completionist = () => (
       variant="h4"
       color={"text.primary"}
       fontFamily={"'Lavishly Yours', cursive"}
-    >
-      lasts 24th and 25th
+    ><br/><br/>
+      Coming Soon
     </Typography>
   </div>
 );
+
+//coming soon to date
 
 const renderer: CountdownRendererFn = ({
   hours,
@@ -477,7 +482,7 @@ function About() {
         For all the people with the flair for acting, for all the people who
         aren’t afraid to flaunt their mad dancing skills and for all the people
         with a nightingale’s voice, Sapthrang is the perfect platform. This
-        doesn’t leave behind the young Shakespeares, the enthusiastic debaters,
+        doesn’t leave behind the young shakespeare's, the enthusiastic debaters,
         the talented poets and knowledgeable quizzers, for everything is set for
         them as well.
       </Typography>
