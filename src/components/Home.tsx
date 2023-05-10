@@ -51,6 +51,7 @@ export function Home() {
       `}
     >
       <Header />
+      <br /><br />
       <About />
       <SapthrangTheme />
       <Footer />
@@ -280,10 +281,9 @@ export function Header({ hide }: { hide?: boolean }) {
               }
             `}
           >
-            <br/>
+            <br />
             <h3>Events</h3>
             <p>Note: The Events are out-dated. These need to be updated,once everything is decided</p>
-            <br/>
           </Typography>
           <div
             css={css`
@@ -370,8 +370,8 @@ const Completionist = () => (
       variant="h4"
       color={"text.primary"}
       fontFamily={"'Lavishly Yours', cursive"}
-    ><br/><br/>
-      Coming Soon
+    ><br />
+      <h3>Coming Soon</h3>
     </Typography>
   </div>
 );
@@ -428,16 +428,16 @@ function About() {
   return (
     <div
       id="about"
-      // css={css`
-      //   padding: 1.6rem 3rem;
-      //   max-width: 1200px;
-      //   margin: 1rem auto;
-      //   backdrop-filter: blur(0.6rem);
+    // css={css`
+    //   padding: 1.6rem 3rem;
+    //   max-width: 1200px;
+    //   margin: 1rem auto;
+    //   backdrop-filter: blur(0.6rem);
 
-      //   .MuiTypography-body1 {
-      //     font-size: 1.2rem;
-      //   }
-      // `}
+    //   .MuiTypography-body1 {
+    //     font-size: 1.2rem;
+    //   }
+    // `}
     >
       <Typography
         mb={1}
@@ -498,7 +498,7 @@ function SapthrangTheme() {
         color="text.primary"
         fontFamily={"'Rye', cursive"}
       >
-        Theme for Sapthrang 2023
+        Theme for Sapthrang {new Date().getFullYear()}
       </Typography>
       <Typography color="text.secondary" textAlign={"justify"} mb={1}>
         Put your masks on,
