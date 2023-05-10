@@ -51,6 +51,8 @@ export function Home() {
       `}
     >
       <Header />
+      <br/>
+      <br/>
       <About />
       <SapthrangTheme />
       <Footer />
@@ -283,7 +285,6 @@ export function Header({ hide }: { hide?: boolean }) {
             <br/>
             <h3>Events</h3>
             <p>Note: The Events are out-dated. These need to be updated,once everything is decided</p>
-            <br/>
           </Typography>
           <div
             css={css`
