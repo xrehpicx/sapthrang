@@ -498,7 +498,7 @@ function SapthrangTheme() {
         color="text.primary"
         fontFamily={"'Rye', cursive"}
       >
-        Theme for Sapthrang 2022
+        Theme for Sapthrang 2023
       </Typography>
       <Typography color="text.secondary" textAlign={"justify"} mb={1}>
         Put your masks on,
