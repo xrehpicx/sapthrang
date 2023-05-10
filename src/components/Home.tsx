@@ -498,7 +498,7 @@ function SapthrangTheme() {
         color="text.primary"
         fontFamily={"'Rye', cursive"}
       >
-        Theme for Sapthrang 2023
+        Theme for Sapthrang {new Date().getFullYear()}
       </Typography>
       <Typography color="text.secondary" textAlign={"justify"} mb={1}>
         Put your masks on,
