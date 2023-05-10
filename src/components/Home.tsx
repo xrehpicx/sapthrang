@@ -372,7 +372,7 @@ const Completionist = () => (
       color={"text.primary"}
       fontFamily={"'Lavishly Yours', cursive"}
     ><br/><br/>
-      Coming Soon
+      <h3>Coming Soon</h3>
     </Typography>
   </div>
 );
