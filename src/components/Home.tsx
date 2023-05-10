@@ -371,7 +371,7 @@ const Completionist = () => (
       variant="h4"
       color={"text.primary"}
       fontFamily={"'Lavishly Yours', cursive"}
-    ><br/><br/>
+    ><br/>
       <h3>Coming Soon</h3>
     </Typography>
   </div>
