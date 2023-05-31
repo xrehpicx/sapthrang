@@ -62,7 +62,7 @@ export default function Notion() {
     <AnimatePresence>
       {recordMap && (
         <motion.div
-          key={p.id || "Events-9f55b56798de4b99957e4952b5536738"}
+          key={p.id || "  "}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           css={css`

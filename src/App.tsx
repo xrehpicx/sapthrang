@@ -31,8 +31,8 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/event/:id" element={<Notion />} />
-            <Route path="/events" element={<Notion />} />
+            <Route path="/:id" element={<Notion />} />
+            <Route path="/Event" element={<Notion />} />
           </Routes>
         </Router>
       ) : (

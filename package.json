@@ -20,7 +20,7 @@
     "@vercel/node": "^1.15.3",
     "axios": "^0.27.2",
     "framer-motion": "^6.3.2",
-    "notion-client": "^6.12.9",
+    "notion-client": "^6.16.0",
     "notion-types": "^6.12.6",
     "notion-utils": "^6.12.9",
     "notistack": "^2.0.5",

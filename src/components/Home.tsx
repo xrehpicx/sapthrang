@@ -4,7 +4,6 @@ import {
   css,
   IconButton,
   Link,
-  Tooltip,
   Typography,
   useMediaQuery,
   useTheme,
@@ -17,6 +16,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Background } from "./background";
 import { ReactComponent as AtriaLogo } from "../assets/atria_logo.svg";
 import { ReactComponent as CcaLogo } from "../assets/cca_logo.svg";
+import { ReactComponent as Festsvg } from "../assets/Fest_logo.svg"
 import LaunchRoundedIcon from "@mui/icons-material/LaunchRounded";
 import Countdown, { CountdownRendererFn } from "react-countdown";
 import { TextGlitch } from "./TextGlitch";
@@ -50,8 +50,17 @@ export function Home() {
         }
       `}
     >
+      <Festsvg
+        css={css`
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:250px;
+        height: 250px;
+        z-index:3;
+      `} />
       <Header />
-      <br /><br />
       <About />
       <SapthrangTheme />
       <Footer />
@@ -161,8 +170,8 @@ export function Header({ hide }: { hide?: boolean }) {
             0 0 102px #00ffff`,
           }}
         >
-          {hide ? "Coming Soon" : "Sapthrang"}
-          {!hide && (
+          {/* {!hide ? "Coming Soon" : "Sapthrang"} */}
+          {hide && (
             <Typography
               variant="body1"
               fontSize={"2rem"}
@@ -281,16 +290,14 @@ export function Header({ hide }: { hide?: boolean }) {
               }
             `}
           >
-            <br />
             <h3>Events</h3>
-            <p>Note: The Events are out-dated. These need to be updated,once everything is decided</p>
           </Typography>
           <div
             css={css`
               display: flex;
               justify-content: center;
               gap: 2rem;
-
+              margin-bottom: 2rem;
               @media only screen and (max-width: 600px) {
                 gap: 1rem;
                 margin-top: 1rem;
@@ -301,7 +308,7 @@ export function Header({ hide }: { hide?: boolean }) {
               sx={{ fontWeight: 800 }}
               onMouseEnter={(e) => setHover(true)}
               onMouseLeave={(e) => setHover(false)}
-              href="/event/2571e605ba5443329e5b0c8bf9c74df4"
+              href="https://acoustic-airship-2e2.notion.site/Inter-College-Events-e3082305829440098cfd8b78740450f1"
               variant="outlined"
               endIcon={
                 <AnimatePresence>
@@ -327,7 +334,7 @@ export function Header({ hide }: { hide?: boolean }) {
             </Button>
             <Button
               sx={{ fontWeight: 800 }}
-              href="/event/0193b09cab98431facf5dc401734262c"
+              href="https://acoustic-airship-2e2.notion.site/Intra-College-Events-0a330db8a6084d2692a46e78ca5e278b"
               onMouseEnter={(e) => setHover(true)}
               onMouseLeave={(e) => setHover(false)}
               variant="outlined"
@@ -364,14 +371,16 @@ const Completionist = () => (
     <Typography
       css={css`
         @media only screen and (max-width: 600px) {
-          font-size: 3rem;
+          font-size: 2rem;
         }
       `}
-      variant="h4"
+      variant="h5"
       color={"text.primary"}
-      fontFamily={"'Lavishly Yours', cursive"}
-    ><br />
-      <h3>Coming Soon</h3>
+      fontFamily={"'sans serif','cursive'"}
+    >
+      <p css={css`
+        margin-top: 200px;
+      `}>5th & 6th june</p>
     </Typography>
   </div>
 );
@@ -501,19 +510,18 @@ function SapthrangTheme() {
         Theme for Sapthrang {new Date().getFullYear()}
       </Typography>
       <Typography color="text.secondary" textAlign={"justify"} mb={1}>
-        Put your masks on,
+      Welcome to "Festa La Fiesta" – the ultimate celebration of celebrations! 
+      Prepare to embark on a thrilling journey where cultures collide, traditions 
+      intertwine, and joy knows no bounds.
       </Typography>
       <Typography color="text.secondary" textAlign={"justify"} mb={1}>
-        And grab some popcorn
+      Our college fest is here to ignite your senses and transport you 
+      to a vibrant world filled with the splendor of festivals from across the globe.
       </Typography>
       <Typography color="text.secondary" textAlign={"justify"} mb={1}>
-        Because it’s time to celebrate a carnival that Atria has never witnessed
-        before!
-      </Typography>
-      <Typography color="text.secondary" textAlign={"justify"} mb={1}>
-        This year we are going with Carnival x Masquerade as our theme for the
-        fest. So here’s to making your college days more colourful and
-        memorable!
+      As the sun sets, the atmosphere ignites into a captivating spectacle 
+      of lights, music, and performances. Join us at Festa La Fiesta, where 
+      the spirit of celebration knows no boundaries.
       </Typography>
     </div>
   );
@@ -569,8 +577,9 @@ function Footer() {
               color="text.primary"
               fontFamily={"'Rye', cursive"}
               ml="0.4rem"
+              marginBottom={"10px"}
             >
-              Cultural club | Atria IT
+              Cultural Committee of Atria
             </Typography>
 
             <Typography
@@ -579,12 +588,31 @@ function Footer() {
               color="text.primary"
               textAlign={mobile ? "center" : "initial"}
               fontFamily={`-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+                "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+              sans-serif`}
+            >
+            </Typography>
+
+            <Typography
+              width={"100%"}
+              ml="0.4rem"
+              variant="subtitle1"
+              color="text.primary"
+              textAlign={mobile ? "center" : "initial"}
+              fontFamily={`-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif`}
-            >
-              <Link href="tel:8310559115">8310559115</Link> |{" "}
-              <Link href="tel:9743302809">9743302809</Link> |{" "}
-              <Link href="tel:6361838411">6361838411</Link>
+            ><Typography
+            marginBottom={"10px"}>
+            Teacher Cordinator:<br/>
+            <Link href="tel:94489 36454">Archana Motta: 94489 36454</Link><br />
+            <Link href="tel:97415 94742">Bhaskar M K: 97415 94742</Link>
+          </Typography>
+          <Typography>
+            Student Cordinator:<br/>
+            <Link href="tel:96864 17283">Anand: 96864 17283</Link> <br />
+            <Link href="tel:90666 27448">Alok: 90666 27448</Link>
+            </Typography>
             </Typography>
             <div
               css={css`
@@ -650,9 +678,7 @@ function Footer() {
           variant="subtitle1"
           fontWeight={800}
         >
-          <Link color="inherit" href="https://www.instagram.com/xrehpicx/">
-            <TextGlitch text="Designed & Built by Raj" />
-          </Link>
+          <TextGlitch text="Designed & Built by Atria Web Designers" />
         </Typography>
       </footer>
     </>
