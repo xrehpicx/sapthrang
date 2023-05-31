@@ -380,7 +380,7 @@ const Completionist = () => (
     >
       <p css={css`
         margin-top: 200px;
-      `}>5th & 6th june</p>
+      `}>Coming Soon</p>
     </Typography>
   </div>
 );
