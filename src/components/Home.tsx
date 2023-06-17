@@ -380,7 +380,7 @@ const Completionist = () => (
     >
       <p css={css`
         margin-top: 200px;
-      `}>30th june & 1st july</p>
+      `}>30th June & 1st July</p>
     </Typography>
   </div>
 );
@@ -610,7 +610,7 @@ function Footer() {
           </Typography>
           <Typography>
             Student Cordinator:<br/>
-            <Link href="tel:96864 17283">Anand: 96864 17283</Link> <br />
+            <Link href="tel:63624 74733">Lohith: 63624 74733</Link> <br />
             <Link href="tel:90666 27448">Alok: 90666 27448</Link>
             </Typography>
             </Typography>
